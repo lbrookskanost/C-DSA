@@ -21,4 +21,23 @@ int* merge_sort(int* arr, int length);
  */
 int* merge(int* a, int* b, int a_len, int b_len);
 
+/*
+ * Does in-place insertion sort on an array of ints.
+ * Returns a new sorted array.
+ */
+int* insertion_inplace(int* arr, int length);
+
+/*
+ * Does insertion sort on an array of ints.
+ * Allocate and returns a new sorted array.
+ * Caller is responsible for freeing the returned ptr.
+ */
+int* insertion(int* arr, int length);
+
+/* 
+ * Helper function for insertion().
+ * Inserts an item at an index to an array.
+ */
+void insert(int* arr, int index, int item);
+
 #endif // LAB1_H
